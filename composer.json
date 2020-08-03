@@ -1,5 +1,5 @@
 {
-  "name": "digital-hub/juno",
+  "name": "juno/magento2",
   "description": "Juno integration extension for Magento 2",
   "version": "1.0.1",
   "type": "magento2-module",
