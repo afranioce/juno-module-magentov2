@@ -1,0 +1,37 @@
+<?php
+$additionalInformation = $block->getMethod()->getInfoInstance()->getAdditionalInformation();
+$junoData = isset($additionalInformation['juno_data']) ? \Zend\Json\Decoder::decode($additionalInformation['juno_data']) : null;
+?>
+<p><?= $block->escapeHtml($block->getMethod()->getTitle()) ?></p>
+<?php if ($junoData) : ?>
+    <p>
+        <?php if (isset($additionalInformation['cc_last'])) : ?>
+            Número: XXXX-XXXX-XXXX-<?= $block->escapeHtml($additionalInformation['cc_last']) ?><br />
+        <?php endif; ?>
+        Parcelado em: <?= $block->escapeHtml($additionalInformation['installments']) ?>x
+    </p>
+<?php endif; ?>
+
+<table class="admin__table-secondary">
+    <tbody>
+    <?php $i = 1; ?>
+    <?php foreach ($junoData->data->charges as $charge) : ?>
+        <tr>
+            <th>Cobrança #<?= $block->escapeHtml($charge->code) ?></th>
+            <td>Parcela <?= $block->escapeHtml($i) ?></td>
+            <td>Vencimento <?= $block->escapeHtml($charge->dueDate) ?></td>
+            <td>
+                <?php // phpcs:disable ?>
+                <?php echo $block->escapeHtml($this->helper(Magento\Framework\Pricing\Helper\Data::class)->currency($charge->payments[0]->amount, true, false));?>
+                <?php // phpcs:enable ?>
+            </td>
+            <td>
+                <a href="<?= $block->escapeHtml($charge->checkoutUrl) ?>" target="_blank">
+                    <span>Link do pagamento</span>
+                </a>
+            </td>
+        </tr>
+        <?php $i++ ?>
+    <?php endforeach; ?>
+    </tbody>
+</table>
