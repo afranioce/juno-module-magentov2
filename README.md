@@ -10,8 +10,8 @@ https://dev.juno.com.br/api/v1
 
 ## Requisitos
 
-  - Magento Community 2.0.6 
-  - PHP +7.1 até 7.3
+  - Magento Community a partir do 2.0.6 
+  - PHP a partir do 7.1 
 
 ## Importante
 
