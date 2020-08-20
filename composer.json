@@ -24,6 +24,7 @@
     "magento/module-ui": "101.1.*",
     "psr/log": "^1.0"
   },
+  "minimum-stability": "stable",
   "repositories": [
     {
       "type": "composer",
