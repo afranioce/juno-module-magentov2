@@ -10,14 +10,32 @@ https://dev.juno.com.br/api/v1
 
 ## Requisitos
 
-  - Magento Community a partir do 2.0.6 
-  - PHP a partir do 7.1 
+  - Versão mínima para o Magento: 2.3.0
+  - Versão mínima para 7.1.3  
 
 ## Importante
 
 Para utilizar e configurar o módulo você precisa ter um **cadastro completo** na Juno. 
 
 Você pode fazer seu cadastro clicando [aqui](https://app.juno.com.br/).
+
+## Instalação 
+
+- Vá até o diretório raíz do seu projeto magento e execute os passos abaixo.
+
+`composer require juno/magento2:dev-master`
+
+Caso seja a primeira vez instalando um componente magento, suas credenciais serão solicitadas. Para entender como e onde preenchê-las, utilize os steps da [documentação oficial](http://devdocs.magento.com/guides/v2.0/install-gde/prereq/connect-auth.html) do Magento em caso de dúvidas. 
+
+- Para ter certeza de que o módulo irá aparecer no painel admin, não esqueça de atualizar o projeto
+
+  `php bin/magento setup:upgrade`
+  `php bin/magento setup:static-content:deploy`
+
+- Caso sua loja esteja com tradução pt_BR: 
+  
+  `php bin/magento setup:upgrade`
+  `php bin/magento setup:static-content:deploy pt_BR `
 
 ### Homologação
 
