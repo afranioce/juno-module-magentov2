@@ -11,7 +11,7 @@ https://dev.juno.com.br/api/v1
 ## Requisitos
 
   - Magento de 2.0 até 2.3.2
-  - PHP 7.0
+  - PHP >= 7.1.3
 
 ##### A versão do PHP requerido depende diretamente da versão do Magento instalada.  
 
