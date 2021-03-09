@@ -75,126 +75,126 @@
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                     <comment>Habilitar o envio de e-mails de notificação ao seu cliente pela Juno</comment>
                 </field>
+            </group>
 
-                <group id="attributes_mapping" translate="label" type="text" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Configurações de campos do cliente</label>
+            <group id="attributes_mapping" translate="label" type="text" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Configurações de campos do cliente</label>
 
-                    <field id="customer_cpf" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
-                        <label>Atributo para CPF - Cliente cadastrado</label>
-                        <source_model>DigitalHub\Juno\Model\Config\Source\CustomerAttributes</source_model>
-                    </field>
+                <field id="customer_cpf" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Atributo para CPF - Cliente cadastrado</label>
+                    <source_model>DigitalHub\Juno\Model\Config\Source\CustomerAttributes</source_model>
+                </field>
 
-                    <field id="customer_cnpj" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
-                        <label>Atributo para CNPJ - Cliente cadastrado</label>
-                        <source_model>DigitalHub\Juno\Model\Config\Source\CustomerAttributes</source_model>
-                    </field>
+                <field id="customer_cnpj" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Atributo para CNPJ - Cliente cadastrado</label>
+                    <source_model>DigitalHub\Juno\Model\Config\Source\CustomerAttributes</source_model>
+                </field>
 
-                    <field id="customer_cpf_guest" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
-                        <label>Atributo para CPF - Guest checkout</label>
-                        <source_model>DigitalHub\Juno\Model\Config\Source\CustomerAttributesAddress</source_model>
-                    </field>
+                <field id="customer_cpf_guest" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Atributo para CPF - Guest checkout</label>
+                    <source_model>DigitalHub\Juno\Model\Config\Source\CustomerAttributesAddress</source_model>
+                </field>
 
-                    <field id="customer_cnpj_guest" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
-                        <label>Atributo para CNPJ - Guest checkout</label>
-                        <source_model>DigitalHub\Juno\Model\Config\Source\CustomerAttributesAddress</source_model>
-                    </field>
+                <field id="customer_cnpj_guest" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Atributo para CNPJ - Guest checkout</label>
+                    <source_model>DigitalHub\Juno\Model\Config\Source\CustomerAttributesAddress</source_model>
+                </field>
 
-                    <field id="customer_telephone" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
-                        <label>Atributo para Telefone - Cliente cadastrado</label>
-                        <source_model>DigitalHub\Juno\Model\Config\Source\CustomerAttributes</source_model>
-                    </field>
+                <field id="customer_telephone" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Atributo para Telefone - Cliente cadastrado</label>
+                    <source_model>DigitalHub\Juno\Model\Config\Source\CustomerAttributes</source_model>
+                </field>
 
-                    <field id="customer_telephone_guest" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
-                        <label>Atributo para Telefone - Guest Checkout</label>
-                        <source_model>DigitalHub\Juno\Model\Config\Source\CustomerAttributesAddress</source_model>
-                    </field>
+                <field id="customer_telephone_guest" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Atributo para Telefone - Guest Checkout</label>
+                    <source_model>DigitalHub\Juno\Model\Config\Source\CustomerAttributesAddress</source_model>
+                </field>
 
-                    <field id="address_street" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
-                        <label>Atributo para Endereço - Logradouro</label>
-                        <source_model>DigitalHub\Juno\Model\Config\Source\CustomerAttributesAddress</source_model>
-                    </field>
+                <field id="address_street" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Atributo para Endereço - Logradouro</label>
+                    <source_model>DigitalHub\Juno\Model\Config\Source\CustomerAttributesAddress</source_model>
+                </field>
 
-                    <field id="address_street_number" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
-                        <label>Atributo para Endereço - Número</label>
-                        <source_model>DigitalHub\Juno\Model\Config\Source\CustomerAttributesAddress</source_model>
-                    </field>
+                <field id="address_street_number" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Atributo para Endereço - Número</label>
+                    <source_model>DigitalHub\Juno\Model\Config\Source\CustomerAttributesAddress</source_model>
+                </field>
 
-                    <field id="address_complement" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
-                        <label>Atributo para Endereço - Complemento</label>
-                        <source_model>DigitalHub\Juno\Model\Config\Source\CustomerAttributesAddress</source_model>
-                    </field>
+                <field id="address_complement" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Atributo para Endereço - Complemento</label>
+                    <source_model>DigitalHub\Juno\Model\Config\Source\CustomerAttributesAddress</source_model>
+                </field>
 
-                    <field id="address_neighborhood" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
-                        <label>Atributo para Endereço - Bairro</label>
-                        <source_model>DigitalHub\Juno\Model\Config\Source\CustomerAttributesAddress</source_model>
-                    </field>
-                </group>
+                <field id="address_neighborhood" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Atributo para Endereço - Bairro</label>
+                    <source_model>DigitalHub\Juno\Model\Config\Source\CustomerAttributesAddress</source_model>
+                </field>
+            </group>
 
-                <group id="creditcard" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Configurações de cartão de crédito</label>
+            <group id="creditcard" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Configurações de cartão de crédito</label>
 
-                    <field id="active" translate="label" type="select" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
-                        <label>Ativo</label>
-                        <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                        <comment>Habilita ou desabilita este método de pagamento</comment>
-                    </field>
+                <field id="active" translate="label" type="select" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Ativo</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Habilita ou desabilita este método de pagamento</comment>
+                </field>
 
-                    <field id="title" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
-                        <label>Título do método</label>
-                        <comment>Título do método de pagamento como será exibido para os clientes</comment>
-                    </field>
+                <field id="title" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Título do método</label>
+                    <comment>Título do método de pagamento como será exibido para os clientes</comment>
+                </field>
 
-                    <field id="max_installments" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
-                        <label>Número máximo de parcelas</label>
-                        <comment>Digite um número de 1 à 12</comment>
-                    </field>
+                <field id="max_installments" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Número máximo de parcelas</label>
+                    <comment>Digite um número de 1 à 12</comment>
+                </field>
 
-                    <field id="min_installment_value" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
-                        <label>Valor mínimo por parcela</label>
-                        <comment>Digite apenas números e separador de decimais (formato BRL). Exemplo: 50,00</comment>
-                    </field>
+                <field id="min_installment_value" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Valor mínimo por parcela</label>
+                    <comment>Digite apenas números e separador de decimais (formato BRL). Exemplo: 50,00</comment>
+                </field>
 
-                    <field id="can_save_cc" translate="label" type="select" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
-                        <label>Habilitar compra com 1-click?</label>
-                        <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                        <comment>Habilita ou desabilita a opção para seus clientes salvarem os dados do cartão de crédito durante o checkout para uso em compras futuras.</comment>
-                    </field>
-                </group>
+                <field id="can_save_cc" translate="label" type="select" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Habilitar compra com 1-click?</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Habilita ou desabilita a opção para seus clientes salvarem os dados do cartão de crédito durante o checkout para uso em compras futuras.</comment>
+                </field>
+            </group>
 
-                <group id="boleto" translate="label" type="text" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Configurações de boleto bancário</label>
+            <group id="boleto" translate="label" type="text" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Configurações de boleto bancário</label>
 
-                    <field id="active" translate="label" type="select" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
-                        <label>Ativo</label>
-                        <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                        <comment>Habilita ou desabilita este método de pagamento</comment>
-                    </field>
+                <field id="active" translate="label" type="select" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Ativo</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Habilita ou desabilita este método de pagamento</comment>
+                </field>
 
-                    <field id="title" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
-                        <label>Título do método</label>
-                        <comment>Título do método de pagamento como será exibido para os clientes</comment>
-                    </field>
+                <field id="title" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Título do método</label>
+                    <comment>Título do método de pagamento como será exibido para os clientes</comment>
+                </field>
 
-                    <field id="expiration_days" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
-                        <label>Número de dias para o vencimento</label>
-                        <comment>Digite um número inteiro. Exemplo: 2</comment>
-                    </field>
+                <field id="expiration_days" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Número de dias para o vencimento</label>
+                    <comment>Digite um número inteiro. Exemplo: 2</comment>
+                </field>
 
-                    <field id="max_overdue_days" translate="label" type="text" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1">
-                        <label>Número máximo de dias que o boleto poderá ser pago após o vencimento</label>
-                        <comment>Digite um número inteiro. Exemplo: 2</comment>
-                    </field>
+                <field id="max_overdue_days" translate="label" type="text" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Número máximo de dias que o boleto poderá ser pago após o vencimento</label>
+                    <comment>Digite um número inteiro. Exemplo: 2</comment>
+                </field>
 
-                    <field id="interest" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
-                        <label>Juro mensal para pagamento após o vencimento</label>
-                        <comment>Digite somente números e "," (vírgula) para separador de decimais. Exemplo: 1,99</comment>
-                    </field>
+                <field id="interest" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Juro mensal para pagamento após o vencimento</label>
+                    <comment>Digite somente números e "," (vírgula) para separador de decimais. Exemplo: 1,99</comment>
+                </field>
 
-                    <field id="fine" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
-                        <label>Multa para pagamento após o vencimento</label>
-                        <comment>Digite somente números e "," (vírgula) para separador de decimais. Exemplo: 1,99</comment>
-                    </field>
-                </group>
+                <field id="fine" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Multa para pagamento após o vencimento</label>
+                    <comment>Digite somente números e "," (vírgula) para separador de decimais. Exemplo: 1,99</comment>
+                </field>
             </group>
         </section>
     </system>
